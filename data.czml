@@ -1,0 +1,317 @@
+[  
+  {    
+    "id": "document",    
+    "name": "BNZ Queen Street",    
+    "version": "1.0"  
+  },  
+  {    
+    "id": "Location_01",    
+    "name": "Commercial Bay",  
+    "position": 
+    {
+      "cartographicDegrees": [174.766980, -36.843500, 50]
+    },  
+    "description": "<p>Corner of Quay St. and Commercial Bay. Viewing distance approximately 300m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_02",    
+    "name": "Queen Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.766580, -36.844600, 50]
+    },  
+    "description": "<p>Corner of Custom St. and Queen St. Viewing distance approximately 160m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_03",    
+    "name": "Queen Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.766107, -36.846000, 52]
+    },  
+    "description": "<p>Viewing distance approximately 30m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_04",    
+    "name": "Queen Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.765850, -36.846800, 55]
+    },  
+    "description": "<p>Queen St. Viewing distance approximately 50m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_05",    
+    "name": "Queen Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.76437454039774, -36.851265072903615, 55]
+    },  
+    "description": "<p>Corner of Wellesley St. and Queen St. Viewing distance approximately 330m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+    {    
+    "id": "Location_06",    
+    "name": "Fanshawe Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.758188512003673, -36.84585229327636, 50]
+    },  
+    "description": "<p>Fanshawe St. Viewing distance approximately 720m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_07",    
+    "name": "Fanshawe Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.7566467350314, -36.84599171857654, 50]
+    },  
+    "description": "<p>Fanshawe St. Viewing distance approximately 850m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_08",    
+    "name": "Fanshawe Street",  
+    "position": 
+    {
+      "cartographicDegrees": [174.75583327066474, -36.84599645001521, 50]
+    },  
+    "description": "<p>Fanshawe St. Viewing distance approximately 920m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_9",    
+    "name": "Overpass",  
+    "position": 
+    {
+      "cartographicDegrees": [174.7531609030304, -36.8465491718926, 55]
+    },  
+    "description": "<p>Victoria Park overpass. Viewing distance approximately 1175m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },
+  {    
+    "id": "Location_10",    
+    "name": "Overpass",  
+    "position": 
+    {
+      "cartographicDegrees": [174.75317578566836, -36.84714130523613, 55]
+    },  
+    "description": "<p>Victoria Park overpass. Viewing distance approximately 1175m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [100.0, 100.0, 100.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  },  
+  {    
+    "id": "Location_11",    
+    "name": "Overpass",  
+    "position": 
+    {
+      "cartographicDegrees": [174.75319396673638, -36.84751664974629, 55]
+    },  
+    "description": "<p>Victoria Park overpass. Viewing distance approximately 1175m.</p>", 
+       
+    "ellipsoid": 
+    {
+      "radii": 
+      {
+        "cartesian": [10.0, 10.0, 10.0]
+      },
+      "fill": true,
+      "material": 
+      {
+        "solidColor": 
+        {
+          "color": 
+          {
+            "rgba": [255, 0, 0, 0]
+          }
+        }
+      }
+    }
+  }
+]
+
+

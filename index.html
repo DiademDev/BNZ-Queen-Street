@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BNZ Geospatial Report</title>
+
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.105.1/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.105.1/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Geospatial Report</h1>
+        <h2>BNZ - Queen Street, Auckland</h2>
+        <img class="logo" src="img/Diadem_logo.jpg" width="100px" alt="Diadem logo">
+    </header>
+
+    <div id="cesiumContainer" class="fullSize" sandbox="allow-scripts"></div>
+    <button id="AugmentedBut" type="button">AR</button>
+    <button id="DaylightBut" type="button">Daylight</button>
+    <button id="NightBut" type="button">Night</button>
+    <button id="HomeBut" type="button"><img src="/img/home.png" width="25px" height="25px" alt="home"></button>
+    <button id="LeftBut" type="button">&lt;</button>
+    <button id="RightBut" type="button">&gt;</button>
+    <footer>
+    </footer>
+
+<script src="main.js"></script>
+</body>
+</html>

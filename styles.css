@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+footer {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    text-align: right;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.logo {
+    float: right;
+    padding: 10px;
+    position: relative;
+    bottom: 110px;
+    right: 10px;
+}
+
+button {
+    background-color: rgb(76, 76, 76);
+    color: darkgray;
+}
+
+#DaylightBut {
+    border: none;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    right: 65px;
+}
+
+#NightBut {
+    border: none;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    right: 220px;
+}
+
+#HomeBut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    right: 375px;
+    padding: none;
+}
+
+#HomeBut img {
+    opacity: 0.5;
+}
+
+#RightBut {
+    border: none;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    right: 410px;
+}
+
+#LeftBut {
+    border: none;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    right: 465px;
+}
+
+#AugmentedBut {
+    border: none;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgb(130, 129, 129);
+    font-weight: bold;
+    color: lightgrey;
+}
+
+.custom-QRwindow {
+    font-family: Arial, Helvetica, sans-serif;
+    content: "whats up!";
+    color: rgb(214, 58, 58);
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding-top: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    max-height: 80%;
+  }
+  
+  .top-div-QRwindow {
+    justify-content: center;
+    width: 250px; 
+    height: 250px; 
+    background-color: #3b485d;
+    padding: 0px;
+  }
+
+  .bot-div-QRwindow {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(66, 67, 67);
+    width: 215px; 
+    height: 170px;
+    background-color: none;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+
+  .mid-div-QRwindow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 250px; 
+    height: 170px;
+    background-color: white;
+    padding-top: 0px;
+}
+
+  .custom-QRwindow.open {
+    display: block;
+    position: absolute;
+    top: -100%; 
+    animation: slide-in-QRwindow 1s forwards; 
+  }
+
+  .custom-QRwindow.close {
+    animation: slide-out-QRwindow 1s forwards;
+  }
+  
+  @keyframes slide-in-QRwindow {
+    100% {
+      top: 600px;
+    }
+  }
+  
+  @keyframes slide-out-QRwindow {
+    0% {
+      top: 600px;
+    }
+    100% {
+      top: -100%;
+    }
+
+  }
+ 
