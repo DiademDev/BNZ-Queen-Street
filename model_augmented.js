@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
       dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/libs/draco/');
       loader.setDRACOLoader(dracoLoader);
 
-      loader.load( 'model/model_augmented.glb', function ( glb ) {
+      loader.load( './model/model_augmented.glb', function ( glb ) {
 
         const model = glb.scene;
         model.position.setFromMatrixPosition(reticle.matrix);
-        model.scale.set(0.01, 0.01, 0.01);
+        model.scale.set(0.2, 0.2, 0.2);
         //model.rotation.y = -Math.PI / 2;
 
         // Rotate model to face camera
