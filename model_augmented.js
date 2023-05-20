@@ -1,7 +1,6 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.134.0/build/three.module.js';
 import { ARButton } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/webxr/ARButton.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/GLTFLoader.js';
-import { DRACOLoader} from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/DRACOLoader.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,16 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(controller);
 
     const loader = new GLTFLoader();
-    const dracoLoader = new DRACOLoader();
-
     var modelGrp = [];
 
     controller.addEventListener('select', () => {
 
       if(modelGrp.length === 0) {
-
-      dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/libs/draco/');
-      loader.setDRACOLoader(dracoLoader);
 
       loader.load( './model/model_augmented.glb', function ( glb ) {
 
