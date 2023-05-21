@@ -36,6 +36,23 @@ h3 {
     right: 10px;
 }
 
+#introWindow {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: opacity 1s ease-in-out;
+  z-index: 9999;
+}
+
+
 button {
     background-color: rgb(76, 76, 76);
     color: darkgray;
@@ -73,13 +90,24 @@ button {
 }
 
 #RightBut {
-    border: none;
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    top: 135px;
-    right: 410px;
+  border: none;
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 135px;
+  right: 410px;
+  animation: blink 1s infinite;
 }
+
+@keyframes blink {
+  0%, 49% {
+    box-shadow: 0 0 20px #ffffff;
+  }
+  50%, 100% {
+    box-shadow: none;
+  }
+}
+
 
 #LeftBut {
     border: none;

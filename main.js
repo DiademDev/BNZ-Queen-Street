@@ -4,6 +4,19 @@ Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOi
 
 async function main() {
 
+    document.addEventListener("DOMContentLoaded", function() {
+      var introWindow = document.getElementById("introWindow");
+      introWindow.style.display = "block";
+      
+      setTimeout(function() {
+        introWindow.style.opacity = "0";
+      }, 12000);
+      
+      setTimeout(function() {
+        introWindow.parentNode.removeChild(introWindow);
+      }, 13000);
+    });
+  
     // Create viewer
     const viewer = new Cesium.Viewer("cesiumContainer", {
       // timeline: false,
@@ -25,6 +38,9 @@ async function main() {
 
     // Cesium globe true or false
     viewer.scene.globe.show = true;
+
+    // Remove Cesium logo
+    viewer._cesiumWidget._creditContainer.style.display = "none";
 
     // Add lighting mesh
     try {
@@ -92,9 +108,13 @@ async function main() {
       const leftButton = document.getElementById("LeftBut");
       leftButton.addEventListener("click", onPrevButtonClick);
 
+      const button = document.getElementById("RightBut");
+      setTimeout(function() {
+        button.style.animation = "none";
+      }, 12000);
+
+
     });
-
-
 
   // Target location
   const targetSphere = viewer.entities.add({
