@@ -1,6 +1,6 @@
 // Grant CesiumJS access to your ion assets
 Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4Zjk5N2RlYS0zMGY2LTQxNWQtYjAwMy1iYWUyODI4ODY5YTUiLCJpZCI6MTE3OTUzLCJpYXQiOjE2NzA3Mzk4MTl9.k3I9be0G6cm7S9-U3lYsvSaUZ6mKVf0Capzojy3RZAU";
-//Cesium.GoogleMaps.defaultApiKey = "AIzaSyA1au3L6n6ZZvFqojyNMfB27DiGHLAX7h8"; // Turn on/off
+Cesium.GoogleMaps.defaultApiKey = "AIzaSyA1au3L6n6ZZvFqojyNMfB27DiGHLAX7h8"; // Turn on/off
 
 async function main() {
 
@@ -33,11 +33,11 @@ async function main() {
     });
 
     // Preview OSM tileset - Turn on/off
-    const osmBuildingsTileset = await Cesium.createOsmBuildingsAsync();
-    viewer.scene.primitives.add(osmBuildingsTileset);
+//     const osmBuildingsTileset = await Cesium.createOsmBuildingsAsync();
+//     viewer.scene.primitives.add(osmBuildingsTileset);
 
     // Cesium globe true or false
-    viewer.scene.globe.show = true;
+    viewer.scene.globe.show = false;
 
     // Remove Cesium logo
     viewer._cesiumWidget._creditContainer.style.display = "none";
@@ -52,13 +52,13 @@ async function main() {
     }
 
     // Add Photorealistic 3D Tiles - Turn on/off
-    // try {
-    //   const tileset = await Cesium.createGooglePhotorealistic3DTileset();
-    //   viewer.scene.primitives.add(tileset);
+    try {
+      const tileset = await Cesium.createGooglePhotorealistic3DTileset();
+      viewer.scene.primitives.add(tileset);
     
-    //   } catch (error) {
-    //   console.log(`Error loading Photorealistic 3D Tiles tileset.\n${error}`);
-    // }
+      } catch (error) {
+      console.log(`Error loading Photorealistic 3D Tiles tileset.\n${error}`);
+    }
 
     // Import data source file
     const dataSourcePromise = Cesium.CzmlDataSource.load("data.czml");
